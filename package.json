@@ -12,7 +12,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "deps": "depcruise src --config .dependency-cruiser.cjs",
-    "check": "pnpm typecheck && pnpm lint && pnpm deps && pnpm knip && pnpm test",
+    "typegen": "next typegen",
+    "check": "pnpm typegen && pnpm typecheck && pnpm lint && pnpm deps && pnpm knip && pnpm test",
     "knip": "knip"
   },
   "dependencies": {
